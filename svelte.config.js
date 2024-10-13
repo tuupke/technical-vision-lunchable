@@ -8,7 +8,7 @@ import { createHighlighter } from 'shiki'
 const mdsvexOptions = {
 	extensions: ['.md'],
 	layout: {
-		_: './src/mdsvex.svelte'
+		_: './src/routes/mdsvex.svelte'
 	},
 	highlight: {
 		highlighter: async (code, lang = 'text') => {

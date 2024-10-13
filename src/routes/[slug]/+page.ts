@@ -8,7 +8,7 @@ export async function load({ params }) {
 			content: slide.default,
 			meta: slide.metadata
 		}
-	} catch (e) {
-		error(404, `Could not find ${params.slug}`)
+	} catch (e: unknown) {
+		error(404, `Could not find ${params.slug} ${e}`);
 	}
 }
