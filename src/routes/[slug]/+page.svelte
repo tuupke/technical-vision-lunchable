@@ -15,29 +15,14 @@
 		<h1>{data.meta.title}</h1>
 	</hgroup>
 
-  <!-- Tags -->
-	<div class="tags">
-		{#each data.meta.categories as category}
-			<span class="surface-4">&num;{category}</span>
-		{/each}
-	</div>
-
   <!-- Post -->
-	<div class="prose">
+	<div class="prose prose-invert">
 		<svelte:component this={data.content} />
 	</div>
 </article>
 
-<style>
-	article {
-		margin-inline: auto;
-	}
-
-	h1 {
-		text-transform: capitalize;
-	}
-
-	.tags {
-		display: flex;
-  }
-</style>
+<footer class="flex justify-between">
+	<a href="{data.previous}">Previous</a>
+	<p>{data.current} / {data.total}</p>
+	<a href="{data.next}">Next</a>
+</footer>

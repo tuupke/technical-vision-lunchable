@@ -1,11 +1,8 @@
 ---
-title: Second
-description: Second post.
-date: '2023-4-16'
-categories:
-  - sveltekit
-  - svelte
-published: true
+title: Second slide
+description: Second thing.
+type: 'content'
+order: 1
 ---
 
 ## Svelte
