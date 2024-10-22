@@ -1,7 +1,7 @@
 export type Slide = {
   title: string;
-  description: string;
-  type: 'content' | 'code' | 'demo'
+  subtitle?: string;
+  type: 'content' | 'code' | 'demo' | 'ship'
   order: number;
   slug: string;
 }

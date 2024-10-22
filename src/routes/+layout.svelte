@@ -14,9 +14,6 @@
     })
   })
 
-
-  console.log($page.data);
-
   const navigate = (key: KeyboardEvent) => {
     switch (key.code) {
       case 'ArrowRight':

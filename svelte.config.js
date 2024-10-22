@@ -16,7 +16,7 @@ const mdsvexOptions = {
 				themes: ['github-dark'],
 				langs: ['javascript', 'typescript']
 			})
-			await highlighter.loadLanguage('javascript', 'typescript')
+			await highlighter.loadLanguage('javascript', 'typescript', 'html')
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'github-dark' }))
 			return `{@html \`${html}\` }`
 		}

@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
-	import { img, ul } from '$lib/components/custom'
+	import { img, em, pre, ul } from '$lib/components/custom'
 
-	export { img, ul }
+	export { img, em, pre, ul }
 </script>
 
 <slot />
