@@ -1,7 +1,7 @@
 ---
 title: Second slide
 description: Second thing.
-type: 'code'
+type: 'content'
 order: 3
 ---
 
