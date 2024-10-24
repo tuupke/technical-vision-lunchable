@@ -1,12 +1,12 @@
 ---
 title: Modals x Alerts x Dialogs
-subtitle: Dialog Element
+subtitle: View Transitions API
 type: 'ship'
-order: 7
+order: 10
 ---
 
 <script>
   import ShipScore from '$lib/components/ShipScore.svelte'
 </script>
 
-<ShipScore chrome="37" firefox="98" safari="15.4" globalScore="95%!" shipIt />
+<ShipScore chrome="111" firefox="" safari="18" globalScore="71%!" shipIt />

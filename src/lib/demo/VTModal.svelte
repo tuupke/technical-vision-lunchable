@@ -1,10 +1,25 @@
 <script>
   const setDialog = () => {
-      const trigger = document.querySelector('#demo-modal-open');
       const dialog = document.querySelector('#demo-modal');
-      trigger?.addEventListener('click', () => {
-        dialog?.showModal();
-      })
+      const open = document.querySelector('#demo-modal-open');
+      const form = document.querySelector('#demo-modal form');
+
+      open?.addEventListener('click', open_dialog);
+      form?.addEventListener('submit', close_dialog);
+
+      function open_dialog() {
+        document.startViewTransition(() => {
+          dialog.showModal();
+        })
+      }
+
+      function close_dialog(e) {
+        e.preventDefault();
+        const form = e.target;
+        document.startViewTransition(() => {
+          form.submit();
+        })
+      }
   }
 </script>
 
@@ -12,11 +27,9 @@
 
 <button id="demo-modal-open">Open</button>
 <dialog id="demo-modal">
-  <p>Login</p>
+  <p>Here to show some nice transitions</p>
   <form method="dialog">
-    <input type="text" placeholder="username" />
-    <input type="password" placeholder="password" />
-    <button type="submit">Login</button>
+    <button type="submit">OKE</button>
   </form>
 </dialog>
 
@@ -30,10 +43,7 @@
     padding: 16px;
     border-radius: 16px;
     width: 35%;
-
-    &::backdrop {
-      background: rgba(0,0,0,0.75);
-    }
+    view-transition-name: dialog;
 
     & p {
       font-size: 20px;
@@ -59,4 +69,9 @@
       text-transform: uppercase;
     }
   }
+
+  ::view-transition-group(dialog) {
+    z-index: 10;
+  }
+  
 </style>

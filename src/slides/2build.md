@@ -9,5 +9,3 @@ order: 2
 - Mobile Nav
 - Drawer
 - Accordion
-- Swiper
-- Slideshow

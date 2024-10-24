@@ -9,7 +9,7 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<div class="flex flex-col items-center justify-between w-screen h-screen max-h-screen">
+<div class="flex flex-col items-center justify-between w-screen h-screen max-h-screen slide">
 	{#if data.meta.type === 'content'}
 		<section class="flex flex-col justify-center w-5/6 h-full pt-10 mx-auto">
 				<!-- Title -->
@@ -48,7 +48,7 @@
 
 			<h1 class="font-black text-center text-yellow-400 text-7xl">{data.meta.subtitle}</h1>
 
-			<div class="flex flex-col items-center justify-center gap-4 p-4 overflow-auto overflow rounded-2xl max-h-[80vh]">
+			<div class="flex flex-col items-center justify-center gap-4 p-4 rounded-2xl max-h-[80vh]">
 				<svelte:component this={data.content} />
 			</div>
 		</section>
@@ -62,6 +62,10 @@
 </div>
 
 <style>
+	.slide {
+		view-transition-name: slide;
+	}
+	
 	footer {
 		view-transition-name: footer;
 	}
@@ -69,4 +73,5 @@
 	hgroup {
 		view-transition-name: title;
 	}
+
 </style>
