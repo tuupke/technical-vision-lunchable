@@ -56,7 +56,7 @@
 
 	<footer class="flex justify-between w-full px-6 py-4 text-gray-500">
 		<a href="{data.previous}">Previous</a>
-		<p>{data.current} / {data.total}</p>
+		<a href="/">{data.current} / {data.total}</a>
 		<a href="{data.next}">Next</a>
 	</footer>
 </div>

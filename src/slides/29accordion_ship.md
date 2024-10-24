@@ -9,4 +9,4 @@ order: 29
   import ShipScore from '$lib/components/ShipScore.svelte'
 </script>
 
-<ShipScore chrome="12" firefox="49" safari="6" globalScore="97.5%!" shipIt />
+<ShipScore chrome="12" firefox="49" safari="6" globalScore="97.5%!" shipIt inUse />

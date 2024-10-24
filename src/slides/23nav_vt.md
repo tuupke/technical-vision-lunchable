@@ -70,7 +70,7 @@ order: 23
 
 	@keyframes slide-mobile-nav-demo {
 		from {
-			translate: 100vi;
+			translate: 100vw;
 		}
 	}
 

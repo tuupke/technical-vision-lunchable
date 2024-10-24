@@ -10,6 +10,7 @@
   export let checkIt: boolean = false;
 
   export let globalScore: string = '';
+  export let inUse: boolean = false;
 
   let showScore: boolean = false;
 </script>
@@ -49,6 +50,13 @@
         <span class="px-2 py-1 -m-6 text-3xl font-black rounded-md shadow-lg bg-gradient-to-br from-red-200 to-red-700 text-gray-950">X</span>
       {/if}
     </div>
+  </div>
+{/if}
+
+{#if inUse && showScore}
+  <div class="absolute flex flex-col items-center left-[12vw] -rotate-12" in:fly={{x: -200, delay: 1500}}>
+    <span class="text-4xl font-semibold">used in</span>
+    <span class="font-mono font-light tracking-tighter text-9xl">VUE-UI</span>
   </div>
 {/if}
 

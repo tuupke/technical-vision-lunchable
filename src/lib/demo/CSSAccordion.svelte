@@ -32,5 +32,9 @@
     margin-left: 20vw;
     font-size: 24px;
 		cursor: pointer;
+
+		& p {
+			padding: 8px 0;
+		}
   }
 </style>
