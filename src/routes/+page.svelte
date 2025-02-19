@@ -12,7 +12,8 @@
 	<a href={data.slides[0].slug} class="w-2/3 mb-16"
 		><img src="/Lunchables.svg" alt="Lunchables" class="w-full" /></a
 	>
-	<h1 class="font-black tracking-tighter text-center uppercase text-9xl">
-		Use &nbsp; these &nbsp; browser &nbsp; API's
-	</h1>
+<!--	<h1 class="font-black tracking-tighter text-center uppercase text-9xl">-->
+<!--		Make the architucture work for you-->
+<!--	</h1>-->
+	<img style="width: 60%" src="use-the-arch.jpg">
 </div>
